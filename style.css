@@ -1,29 +1,44 @@
-*{
-    margin: 5px; padding: 0px; box-sizing: border-box;
+/* Body Section */
+html {
+  scroll-behavior: smooth;
 }
-body {
-    font-family: Arial, sans-serif;  line-height: 1.6;    background-color: #f4f4f4;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 32px;
-}
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-.nav-links li {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-.nav-links li:hover {
-    color: #007bff;
-}
+*{ margin: 0; padding: 0px; box-sizing: border-box;}
+body {font-family: Arial, sans-serif;   line-height: 1.6;   background-color: #525151;  }
+.nav { display: flex; justify-content: center; align-items: center; height: 60px; background-color: #353535; font-size: 30px; }
+.nav ul { list-style: none; display: flex; gap: 20px; }
+.nav ul li { display: inline-block; }
+.nav ul li a { color: #fff; text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1rem; transition: color 0.3s; }
+.nav ul li a:hover { color: #ff88eb; }
+/* Home Section */
+.home { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #353535; }
+.home h1 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 48px; color: #ff88eb; text-align: center; }
+.home p { font-family: 'Courier New', monospace; font-size: 1.2rem; color: #ffffff; text-align: center; margin-top: 20px; }
+.image-container { width: 200px; height: 200px; border-radius: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; align-content: center; }
+.image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* About Section */
+.about { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #353535; }
+.boxed-list { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; padding: 0; list-style: none; margin-top: 20px; }
+.boxed-list li { background-color: #444; color: #fff; padding: 5px 20px; border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.2); transition: background-color 0.3s ease, transform 0.2s ease; }
+.boxed-list li:hover { background-color: #ff88eb; color: #000; transform: translateY(-2px); }
+.about h1 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 48px; color: #ff88eb; text-align: center; }
+.about p { font-family: 'Courier New', monospace; font-size: 1.2rem; color: #ffffff; text-align: center; margin-top: 5px; }
+.about h3 { font-family: 'Courier New', monospace; font-size: 1.5rem; color: #ffffff; text-align: center; margin-top: 20px; }
+/* Projects Section */
+.projects { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #353535; }
+.projects h1 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 48px; color: #ff88eb; text-align: center; }
+.project { display: flex; align-items: center; gap: 20px; background: #353535; padding: 20px; border-radius: 10px; }
+.project img { width: 200px; height: auto; border-radius: 8px; object-fit: cover; }
+.project-info { display: flex; flex-direction: column; justify-content: center; }
+.project-info h3 { font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: #ff88eb; margin-bottom: 10px; }
+.project-info p { font-family: 'Courier New', monospace; color: #fff; margin-bottom: 10px; }
+.project-info a { color: #ff88eb; font-family: 'Poppins', sans-serif; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+.project-info a:hover { color: #fff; }
+/* Contact Section */
+.contact { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #353535; }
+.contact h1 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 48px; color: #ff88eb; text-align: center; }
+.contact p { font-family: 'Courier New', monospace; font-size: 1.2rem; color: #ffffff; text-align: center; margin-top: 5px; }
+.contact img { width: 30px; height: 30px; margin: 10px; }
+.contact ul { list-style: none; display: flex; gap: 20px; justify-content: center; padding: 0; }
+.contact ul li { display: inline-block; }
+
+footer { background-color: #353535; color: #ffffff; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%; }
