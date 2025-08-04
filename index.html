@@ -3,45 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axcee - Portfolio</title>
+    <title>Axcee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logoax.png">
 </head>
 <body>
     <div class="main"> 
        <div class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="topnav-left">
+                <a href="#home"><img src="images/logoax.png" alt="Axcee Logo"></a>
+            </div>
+            <div class="topnav-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
         <div class="home" id="home">
             <div class="image-container">
                 <img src="images/axcee.png" alt="Axcee Cabusas">
             </div>
-              <h1>Hi, I'm Axcee F. Cabusas</h1><br>
-            <p>I believe great code is like good design — invisible, but deeply felt. My goal is to simplify complexity and create digital experiences that just work.</p>
+              <h1>Hi, I'm Axcee F. Cabusas</h1>
+           <ul>
+               <li>Student</li>
+               <li>Developer</li>
+               <li>Designer</li>
+           </ul>
+            <p>I'm still a student, but I want to learn, build, and grow in full-stack development. I enjoy turning ideas into functional, user-friendly systems — one project at a time.</p><br>
+            <p>“We suffer more in imagination than in reality.”<br> – Seneca</p>
         </div>
         <div class="about" id="about">
-            <h1>About Me</h1>
-            <p>I am a 3rd-year IT student with a passion for web development and design.</p>
-            <h3>Tech Stack / Skills</h3>
-            <ul class="boxed-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>MySQL</li>
-            </ul>
+            <div class="aboutme">
+                <h1>About Me</h1>
+                <p>I’m a 3rd-year BSIT student passionate about full-stack development, UI/UX design.</p>
+                <h3>Tech Stack / Skills</h3>
+                <ul class="boxed-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
         </div>
+        <div class="hobbies" id="hobbies">
+            <h1>Hobbies and Interests</h1>
+            <div class="hobby-cards">
+                <div class="card">
+                    <img src="images/gym.png" alt="Gym">
+                    <h3>Gym</h3>
+                </div>
+                <div class="card">
+                    <img src="images/gaming.jpg" alt="Gaming">
+                    <h3>Gaming</h3>
+                </div>
+                    <div class="card">
+                    <img src="images/reading.jpg" alt="Reading">
+                    <h3>Reading</h3>
+                </div>
+                    <div class="card">
+                    <img src="images/hiking.jpg" alt="Running">
+                    <h3>Hiking</h3>
+                </div>
+            </div>
+        </div>
+
         <div class="projects" id="projects">
             <h1>Projects</h1>
             <div class="project">
                 <img src="images/syllabus.png" alt="">
                 <div class="project-info">
                     <h3>Prospectus Management System</h3>
-                    <p>A java application for managing student prospectuses.</p>
+                    <p>A JavaFX-based application that helps administrators manage student prospectuses effectively.</p></p>
                     <a href="https://github.com/sumkai16/IT2C-CABUSAS-PMS.git">View Project</a>
                 </div>
             </div>
