@@ -35,6 +35,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #5251
 .hobby-cards { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
 .card { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
 .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card:hover img { transform: scale(1.1); transition: transform 0.3s; }
 .card h3 { position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.6); color: #DC143C; font-family: 'Poppins', sans-serif; font-size: 1.2rem; text-align: center; padding: 10px 0; margin: 0; }
 
 /* Projects Section */
@@ -47,6 +48,10 @@ body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #5251
 .project-info p { font-family: 'Courier New', monospace; color: #fff; margin-bottom: 10px; }
 .project-info a { color: #DC143C; font-family: 'Poppins', sans-serif; text-decoration: none; font-weight: bold; transition: color 0.3s; }
 .project-info a:hover { color: #fff; }
+.boxed-list-project { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.project-info ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 10px; margin-bottom: 20px;}
+.project-info ul li { background-color: #444; color: #fff; padding: 5px 15px; border-radius: 10px; font-family: 'Poppins', sans-serif; font-size: 0.9rem; box-shadow: 0 2px 6px rgba(0,0,0,0.2); transition: background-color 0.3s ease, transform 0.2s ease; }
+.project-info ul li:hover { transform: translateY(-2px); }
 /* Contact Section */
 .contact { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 70vh; background-color: #353535; }
 .contact h1 { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 48px; color: #DC143C; text-align: center; }
@@ -54,6 +59,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #5251
 .contact img { width: 30px; height: 30px; margin: 10px; }
 .contact ul { list-style: none; display: flex; gap: 20px; justify-content: center; padding: 0; }
 .contact ul li { display: inline-block; }
+.contact img:hover { transform: scale(1.1); transition: transform 0.3s; }
 
 /* Footer */
 footer { background-color: #353535; color: #ffffff; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%; }
